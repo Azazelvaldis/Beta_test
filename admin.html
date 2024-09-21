@@ -3,27 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin - Manage Confessions</title>
+    <title>Admin - Confession Management</title>
+    
+    <!-- Firebase SDKs -->
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"></script>
+
+    <!-- Custom styles -->
     <link rel="stylesheet" href="admin-styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Admin Panel</h1>
-            <p>Manage User Confessions</p>
-        </header>
+    <h1>Admin Panel - Confession Management</h1>
 
-        <main>
-            <div id="confessionList" class="confession-list">
-                <!-- Confessions will be dynamically added here by JavaScript -->
-            </div>
-        </main>
+    <!-- Confession List -->
+    <h2>All Confessions</h2>
+    <div id="confessionList"></div>
 
-        <footer>
-            <p>&copy; 2024 Confession App. Admin Dashboard.</p>
-        </footer>
-    </div>
-
-    <script src="admin.js"></script>
+    <!-- Custom scripts -->
+    <script src="admin-script.js"></script>
 </body>
 </html>
