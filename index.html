@@ -1,34 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Confession App</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confession App</title>
+  
+  <!-- Firebase SDKs -->
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/10.13.2/firebase-database.js"></script>
+
+  <!-- Custom styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div class="container">
-        <header>
-            <h1>Anonymous Confession</h1>
-            <p>Share your thoughts anonymously</p>
-        </header>
+  <h1>Confession App</h1>
 
-        <main>
-            <form id="confessionForm">
-                <textarea id="confessionInput" placeholder="Type your confession..." required></textarea>
-                <button type="submit">Submit Confession</button>
-            </form>
+  <!-- Confession Form -->
+  <form id="confessionForm">
+    <textarea id="confessionInput" placeholder="Type your confession..."></textarea><br>
+    <button type="submit">Submit Confession</button>
+  </form>
 
-            <div id="confessionList" class="confession-list">
-                <!-- Confessions will be displayed here -->
-            </div>
-        </main>
+  <!-- List of Confessions (for admin) -->
+  <h2>All Confessions</h2>
+  <div id="confessionList"></div>
 
-        <footer>
-            <p>&copy; 2024 Confession App. Made with ❤️.</p>
-        </footer>
-    </div>
-
-    <script src="script.js"></script>
+  <!-- Custom scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
